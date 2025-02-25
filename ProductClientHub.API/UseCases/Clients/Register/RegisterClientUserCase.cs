@@ -19,7 +19,7 @@ namespace ProductClientHub.API.UseCases.Clients.Register
             var entity = new Client
             {
                 Name = request.Name,
-                Email = request.Email,
+                Email = request.Email
             };
 
             dbContext.Clients.Add(entity);
@@ -29,7 +29,7 @@ namespace ProductClientHub.API.UseCases.Clients.Register
             return new ResponseShortClientJson()
             {
                 Id = entity.Id,
-                Name = entity.Name,
+                Name = entity.Name
             };
 
         }
